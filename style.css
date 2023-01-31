@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    position:fixed;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    top:0;
+
+    min-height: 3.5rem;
+    background-color: rgba(23, 92, 231, 0.893);
+    /* margin-bottom: 4rem; */
+}
+.nav-bar,#right{
+    padding-top:3px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* #right{
+    display: flex;
+    justify-content: space-between;
+} */
+header #left{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgba(252, 247, 247, 0.947);
+    z-index: 2;
+    text-shadow: 2px 3px rgba(19, 19, 19, 0.872);
+}
+a,li{
+    color:rgb(32, 8, 90);
+    list-style: none;
+    text-decoration: none;
+    padding:0.7rem;
+    font-size: 17px;
+    
+    font-weight: 700;
+}
+li:hover{
+    background-color: rgb(217, 226, 233);
+    border-radius: 4px;
+}
+a:hover{
+  color:rgba(249, 13, 13, 0.845);
+}
+main{
+    margin-top: 3.5rem;
+    opacity: 0.98;
+}
+.container{
+ 
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.748);
+    
+}
+  #img-container , #intro{
+    width:50%;
+    font-size: 24px;
+   object-fit: cover;
+   background-repeat: no-repeat;
+  
+
+}
+button{
+    margin:0.5rem auto;
+    background-color: rgb(246, 246, 243);
+  padding:0.6rem 2rem;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+    
+}
+button a{
+    color: rgb(14, 52, 241);
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(51, 50, 50, 0.777);
+    opacity:0.8;
+    width:35rem;
+    
+    height:30rem;
+    /* padding-top:10rem; */
+    /* margin-left:2rem; */
+    /* height:480px;  */
+    border-radius: 10px;
+    background: linear-gradient(to bottom,rgb(67, 171, 213),rgba(255, 255, 255, 0.949));
+    box-shadow: 2px 3px 10px rgba(16, 173, 217, 0.698);
+}
+#intro h2{
+    margin-bottom:2rem;
+    font-weight: 800;
+    font-family: monospace;
+}
+#img-container img{
+    width:95%;
+    
+}
+section h2{
+    margin-top: 3rem;
+    height:4rem;
+    text-align: center;
+    font-size: 33px;
+color: darkolivegreen;
+}
+section{
+
+    margin:0 30px;
+    padding: 10px 10px;
+  
+}
+section #learn-stacks{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:2rem;
+    /* flex-wrap: wrap; */
+}
+
+#flex-content img{
+    width:100%;
+    border-radius: 12px;
+transition:transform 0.8s ease-in-out;
+}
+#flex-content img:hover{
+    transform: scale(1.06);
+
+}
+#flex-content #text{
+    margin-top: 5px;
+    text-align: center;
+    color:brown
+}
+
+ h2{
+    text-align: center;
+}
+footer{
+     background: rgba(0, 0, 0, 0.116);
+}
+footer, #skill-container{
+   
+   
+    width:90%;
+    margin:auto;
+  
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+#contact-form{
+   
+    display:flex;
+    flex-direction: column;
+  justify-content: center;
+
+}
+#contact-form div{
+    width:90%;
+    margin:auto;
+
+}
+input{
+    width:100%;
+  font-size: 23px;
+   margin: 0.8rem; 
+    padding:1.2rem 1rem;
+    outline: none;
+   border-color: rgb(223, 96, 33);
+  border-radius: 10px;
+   
+
+}
+#submit button{
+    color:rgb(242, 242, 248);
+    background: rgb(22, 125, 235);
+}
+footer button{
+ margin-top:2rem;
+ font-size: 20px;
+}
+
+#skill-container{
+    border-radius: 15px;
+    background-color: rgba(76, 195, 195, 0.45);
+}
+#skill-section{
+    display:grid;
+    grid:repeat(3,100px)/auto-flow 1fr;
+    gap: 18px;
+}
+#grid-item{
+    padding:2px 5px 2px 20px;
+}
+  #skill h2{
+    text-align: center;
+    color: rgba(51, 26, 193, 0.889);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 6px 1px;
+}
+#progress  {
+    margin-top: 10px;
+    width:90%;
+    height:20px;
+  background-color: rgba(21, 21, 21, 0.558);
+}
+#progress div{
+    width:70%;
+    height:100%;
+    background-color: rgba(79, 228, 4, 0.421);
+}
+
+@media screen and (max-width:525px ) and (min-width:370px){
+   
+   
+    div#left{
+    display: none;
+    }
+    #img-container{
+       display: none;
+     }
+#learn-stacks{
+    flex-wrap: wrap;
+ }
+}
+@media screen and (max-width:1000px ) and ( min-width:525px){
+ .container{
+    flex-wrap: wrap;
+ }
+ #img-container{
+    width:100%;
+ }
+#learn-stacks{
+    flex-wrap: wrap;
+ }
+
+}
