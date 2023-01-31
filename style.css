@@ -222,7 +222,7 @@ footer button{
     background-color: rgba(79, 228, 4, 0.421);
 }
 
-@media screen and (max-width:525px ) and (min-width:370px){
+@media screen and (max-width:525px ) and (min-width:350px){
    
    
     div#left{
